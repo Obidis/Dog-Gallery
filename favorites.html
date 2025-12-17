@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dog gallery</title>
+    <script type="module" crossorigin src="./assets/favorites-DQx-fFsT.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/main-B0SAkeQB.js">
+    <link rel="stylesheet" crossorigin href="./assets/main-DWjp5ORd.css">
+  </head>
+  <body>
+    <!-- Contenedor-->
+    <div id="container">
+      
+      <!-- Loader-->
+      <div id="contenedor-carga"><div id="carga"></div></div>
+      
+      <header class="header">
+        <!--Titulo-->
+        <h1>Favoritos</h1>
+        
+        <!--Link al html index-->
+        <a class="link" href="./index.html">Home</a>
+        
+        <!--video-->
+        <video autoplay loop muted playsinline class="background-video">
+          <source src="./assets/213195_medium-Dxnhj4nD.mp4" type="video/mp4">
+        </video>
+      </header>
+      
+      <!--Contenedor imagenes favoritas-->
+      <div id="hero-favorites"></div>
+
+      <!--Boton eliminar todos los favoritos-->
+      <div>
+        <button id="delete-favorites">Eliminar Todos</button> 
+      </div>
+
+      <footer class="footer">
+        <!--Contenedor-->
+        <div id="footer_container">
+          
+          <aside class="aside">
+            
+            <!--Enlaces-->           
+            <nav class="aside_nav">
+              <a class="aicon" href="https://github.com/Obidis" target="blank"><img src="data:image/svg+xml,%3csvg%20width='98'%20height='96'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M48.854%200C21.839%200%200%2022%200%2049.217c0%2021.756%2013.993%2040.172%2033.405%2046.69%202.427.49%203.316-1.059%203.316-2.362%200-1.141-.08-5.052-.08-9.127-13.59%202.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015%204.934.326%207.523%205.052%207.523%205.052%204.367%207.496%2011.404%205.378%2014.235%204.074.404-3.178%201.699-5.378%203.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283%200-5.378%201.94-9.778%205.014-13.2-.485-1.222-2.184-6.275.486-13.038%200%200%204.125-1.304%2013.426%205.052a46.97%2046.97%200%200%201%2012.214-1.63c4.125%200%208.33.571%2012.213%201.63%209.302-6.356%2013.427-5.052%2013.427-5.052%202.67%206.763.97%2011.816.485%2013.038%203.155%203.422%205.015%207.822%205.015%2013.2%200%2018.905-11.404%2023.06-22.324%2024.283%201.78%201.548%203.316%204.481%203.316%209.126%200%206.6-.08%2011.897-.08%2013.526%200%201.304.89%202.853%203.316%202.364%2019.412-6.52%2033.405-24.935%2033.405-46.691C97.707%2022%2075.788%200%2048.854%200z'%20fill='%23fff'/%3e%3c/svg%3e" alt="Github" class="icon"></a>
+              <a class="aicon" href="#"><img src="data:image/png;base64,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" alt="discord" class="icon"></a> 
+              <a class="aicon" href="#"><img src="data:image/svg+xml,%3csvg%20width='25'%20height='24'%20viewBox='0%200%2025%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M5.5513%203.3042C4.41165%203.3042%203.48447%204.23017%203.48447%205.36833C3.48447%206.50724%204.41165%207.4338%205.5513%207.4338C6.68872%207.4338%207.61408%206.50724%207.61408%205.36833C7.61408%204.23017%206.68872%203.3042%205.5513%203.3042ZM3.76655%208.99818V20.4515H7.32916L7.33051%208.99818H3.76655ZM9.56465%208.99713V20.4503L13.1192%2020.4517L13.1206%2014.7845C13.1206%2013.3298%2013.3739%2011.8429%2015.2535%2011.8429C17.1044%2011.8429%2017.1044%2013.5976%2017.1044%2014.879V20.4503L20.6629%2020.449V14.1689C20.6629%2011.3348%2020.1456%208.71224%2016.3929%208.71224C14.6304%208.71224%2013.4769%209.70851%2013.0247%2010.5618H12.9747L12.9747%208.99713H9.56465ZM22.4355%2024H1.98187C1.00598%2024%200.212036%2023.223%200.212036%2022.268V1.73068C0.212036%200.776376%201.00598%200%201.98187%200H22.4355C23.4151%200%2024.212%200.776376%2024.212%201.73068V22.268C24.212%2023.223%2023.4151%2024%2022.4355%2024Z'%20fill='white'/%3e%3c/svg%3e" alt="LinkedIn" class="icon"></a>
+            </nav>
+
+            <!--Copyright-->
+            <div class="add">
+              <p class="copyrigth"> Copyright © 2025 <span>By Ōkami. Ltd.</span></p>
+            </div>
+
+          </aside>
+        </div>
+      </footer>
+      
+    </div>
+  </body>
+</html>
