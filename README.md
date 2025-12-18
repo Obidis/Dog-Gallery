@@ -4,6 +4,7 @@ Dog Gallery - Proyecto Frontend Java Script
 Proyecto público de frontend web Responsive, donde aplico lo aprendido en HTML, CSS y JS. He utilizado tecnologías y herramientas clave como:
 
 Sass: Uso de variables, anidación y organización de estilos.
+Js: Uso de Clases para manejar los eventos del DOM
 Vite: Para gestionar el entorno de desarrollo y mejorar la velocidad de compilación.
 Git: Control de versiones para gestionar cambios de manera eficiente.
 Flexbox y Grid: Para estructurar y distribuir los elementos de la página.
