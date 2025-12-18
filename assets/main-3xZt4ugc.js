@@ -1,0 +1,1 @@
+import{G as n}from"./main-DISpwd4-.js";let e=new n;e.mostrarImagenes();e.loader();e.getDogsBreeds();document.getElementById("btn").addEventListener("click",e.mostrarImagenes.bind(e));document.getElementById("more-button").addEventListener("click",e.masImagenes.bind(e));e.saveToLocalStorage.bind(e)();document.addEventListener("click",t=>{console.log(t.target)});
