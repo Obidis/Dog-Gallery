@@ -1,0 +1,1 @@
+import{G as t}from"./main-BhNFnYAu.js";let e=new t;e.mostrarImagenes();e.loader();e.getCatsBreeds();document.getElementById("btn").addEventListener("click",e.mostrarImagenes.bind(e));document.getElementById("more-button").addEventListener("click",e.masImagenes.bind(e));e.saveToLocalStorage.bind(e)();e.contadorFavoritos.bind(e)();
